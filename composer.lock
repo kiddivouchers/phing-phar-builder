@@ -1,0 +1,162 @@
+{
+    "hash": "f59ad2d9d3883e383957d32194863ce8",
+    "packages": [
+        {
+            "name": "pear/archive-tar",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/pear/Archive_Tar",
+                "reference": "master"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/pear/Archive_Tar/archive/master.zip",
+                "reference": "master",
+                "shasum": null
+            },
+            "require": {
+                "pear/pear": "~1.9.0"
+            },
+            "type": "library",
+            "installation-source": "source",
+            "include-path": [
+                ""
+            ],
+            "time": "2012-11-12 15:44:44"
+        },
+        {
+            "name": "pear/pear",
+            "version": "1.9.4",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/pear/pear-core",
+                "reference": "4dc8711a251ed46731a72b92f57b689f52af2d2b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/pear/pear-core/archive/4dc8711a251ed46731a72b92f57b689f52af2d2b.zip",
+                "reference": "4dc8711a251ed46731a72b92f57b689f52af2d2b",
+                "shasum": null
+            },
+            "type": "library",
+            "installation-source": "dist",
+            "include-path": [
+                ""
+            ]
+        },
+        {
+            "name": "phing/phing",
+            "version": "dev-phar-fixes",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/cs278/phing",
+                "reference": "f7edcd9d9eb102b7b77145c7e6eb79647d2cf24f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cs278/phing/zipball/f7edcd9d9eb102b7b77145c7e6eb79647d2cf24f",
+                "reference": "f7edcd9d9eb102b7b77145c7e6eb79647d2cf24f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "time": "2013-01-14 13:48:01",
+            "bin": [
+                "bin/phing"
+            ],
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "classes/phing/"
+                ]
+            },
+            "include-path": [
+                "classes"
+            ],
+            "license": [
+                "LGPL3"
+            ],
+            "authors": [
+                {
+                    "name": "Michiel Rook",
+                    "email": "mrook@php.net"
+                },
+                {
+                    "name": "Phing Community",
+                    "homepage": "http://www.phing.info/trac/wiki/Development/Contributors"
+                }
+            ],
+            "description": "PHing Is Not GNU make; it's a PHP project build system or build tool based on Apache Ant.",
+            "homepage": "http://www.phing.info/",
+            "keywords": [
+                "build",
+                "tool",
+                "task"
+            ],
+            "support": {
+                "source": "https://github.com/cs278/phing/tree/phar-fixes"
+            }
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "symfony/finder",
+            "version": "v2.1.6",
+            "target-dir": "Symfony/Component/Finder",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Finder",
+                "reference": "v2.1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/symfony/Finder/archive/v2.1.6.zip",
+                "reference": "v2.1.6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "time": "2012-12-10 12:46:54",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Finder": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Finder Component",
+            "homepage": "http://symfony.com"
+        }
+    ],
+    "aliases": [
+        {
+            "alias": "2.4.x-dev",
+            "alias_normalized": "2.4.9999999.9999999-dev",
+            "version": "dev-phar-fixes",
+            "package": "phing/phing"
+        }
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "phing/phing": 20,
+        "pear/archive-tar": 20
+    }
+}
