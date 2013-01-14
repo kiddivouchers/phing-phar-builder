@@ -1,4 +1,13 @@
 {
+    "name": "widerplan/phing-phar-builder",
+    "description": "Bundles Phing into a PHP phar file with dependencies for standalone use",
+    "type": "library",
+    "keywords": ["phing", "phar", "standalone", "tool"],
+    "homepage": "https://github.com/kiddivouchers/phing-phar-builder",
+    "license": "MIT",
+    "authors": [
+        {"name": "Wider Plan Ltd", "email": "development@widerplan.com", "homepage": "http://www.widerplan.com/"}
+    ],
     "require": {
         "phing/phing": "dev-phar-fixes as 2.4.x-dev",
         "pear/archive-tar": "*@dev"
