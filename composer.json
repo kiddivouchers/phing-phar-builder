@@ -9,51 +9,11 @@
         {"name": "Wider Plan Ltd", "email": "development@widerplan.com", "homepage": "http://www.widerplan.com/"}
     ],
     "require": {
-        "phing/phing": "dev-phar-fixes as 2.4.x-dev",
-        "pear/archive-tar": "*@dev"
-    },
-    "require-dev": {
         "symfony/finder": "~2.1.0"
     },
     "autoload": {
         "psr-0": {
             "WiderPlan\\PhingPharBuilder\\": "src"
         }
-    },
-    "repositories": [
-        {"type": "vcs", "url": "git://github.com/cs278/phing"},
-        {"type": "package", "package": {
-            "name": "pear/archive-tar",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git://github.com/pear/Archive_Tar",
-                "reference": "master"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/pear/Archive_Tar/archive/master.zip",
-                "reference": "master"
-            },
-            "require": {
-                "pear/pear": "~1.9.0"
-            },
-            "include-path": [""]
-        }},
-        {"type": "package", "package": {
-            "name": "pear/pear",
-            "version": "1.9.4",
-            "source": {
-                "type": "git",
-                "url": "git://github.com/pear/pear-core",
-                "reference": "4dc8711a251ed46731a72b92f57b689f52af2d2b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/pear/pear-core/archive/4dc8711a251ed46731a72b92f57b689f52af2d2b.zip",
-                "reference": "4dc8711a251ed46731a72b92f57b689f52af2d2b"
-            },
-            "include-path": [""]
-        }}
-    ]
+    }
 }
