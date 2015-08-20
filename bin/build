@@ -13,6 +13,9 @@ cd build
 composer install --no-dev --prefer-dist
 composer dump-autoload --optimize
 
+# Change namespace of Composer Autoloader this is to provent errors when
+# including the Composer autoloader of an application which has a different
+# public interface to the one bundled here.
 find vendor/composer/ -maxdepth 1 -name "*.php"  -exec sed --in-place 's/Composer\\Autoload/PhingComposer\\Autoload/g' '{}' \;
 
 # Verify everything works
