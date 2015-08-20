@@ -1,42 +1,6 @@
 {
     "require": {
-        "phing/phing": "dev-phar-fixes as 2.4.x-dev",
-        "pear/archive-tar": "*@dev"
-    },
-    "repositories": [
-        {"type": "vcs", "url": "git://github.com/cs278/phing"},
-        {"type": "package", "package": {
-            "name": "pear/archive-tar",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git://github.com/pear/Archive_Tar",
-                "reference": "23341344e19bbab1056cf2d2773f28cfccf787a3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/pear/Archive_Tar/archive/master.zip",
-                "reference": "23341344e19bbab1056cf2d2773f28cfccf787a3"
-            },
-            "require": {
-                "pear/pear": "~1.9.0"
-            },
-            "include-path": [""]
-        }},
-        {"type": "package", "package": {
-            "name": "pear/pear",
-            "version": "1.9.4",
-            "source": {
-                "type": "git",
-                "url": "git://github.com/pear/pear-core",
-                "reference": "4dc8711a251ed46731a72b92f57b689f52af2d2b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/pear/pear-core/archive/4dc8711a251ed46731a72b92f57b689f52af2d2b.zip",
-                "reference": "4dc8711a251ed46731a72b92f57b689f52af2d2b"
-            },
-            "include-path": [""]
-        }}
-    ]
+        "phing/phing": "~2.11",
+        "pear/archive_tar": "~1.4.0"
+    }
 }
