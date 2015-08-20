@@ -11,6 +11,10 @@ cp LICENSE build/
 
 cd build
 composer install --no-dev --prefer-dist
+
+# Remove PHP4 code
+[ ! -f vendor/pear/pear-core-minimal/src/PEAR/ErrorStack5.php ] || rm -f vendor/pear/pear-core-minimal/src/PEAR/ErrorStack.php
+
 composer dump-autoload --optimize
 
 # Change namespace of Composer Autoloader this is to provent errors when
