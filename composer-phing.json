@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/pear/Archive_Tar",
-                "reference": "master"
+                "reference": "23341344e19bbab1056cf2d2773f28cfccf787a3"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/pear/Archive_Tar/archive/master.zip",
-                "reference": "master"
+                "reference": "23341344e19bbab1056cf2d2773f28cfccf787a3"
             },
             "require": {
                 "pear/pear": "~1.9.0"

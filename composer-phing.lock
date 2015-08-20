@@ -1,5 +1,5 @@
 {
-    "hash": "1b5ff3deb65b34c293423a1c710d984e",
+    "hash": "ccb7054cc0c5f7361c5665d6c779d9b7",
     "packages": [
         {
             "name": "pear/archive-tar",
@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/pear/Archive_Tar",
-                "reference": "master"
+                "reference": "23341344e19bbab1056cf2d2773f28cfccf787a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/pear/Archive_Tar/archive/master.zip",
-                "reference": "master",
+                "url": "https://github.com/pear/Archive_Tar/archive/23341344e19bbab1056cf2d2773f28cfccf787a3.zip",
+                "reference": "23341344e19bbab1056cf2d2773f28cfccf787a3",
                 "shasum": null
             },
             "require": {
