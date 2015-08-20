@@ -22,6 +22,6 @@ find vendor/composer/ -maxdepth 1 -name "*.php"  -exec sed --in-place 's/Compose
 echo "Testing Phing..."
 
 vendor/bin/phing -version
-../bin/compile
+php -d phar.readonly=0 -f ../bin/compile
 
 chmod +x phing.phar
