@@ -9,7 +9,7 @@
         {"name": "Wider Plan Ltd", "email": "development@widerplan.com", "homepage": "http://www.widerplan.com/"}
     ],
     "require": {
-        "symfony/finder": "~2.1.0"
+        "symfony/finder": "~2.1"
     },
     "autoload": {
         "psr-0": {
