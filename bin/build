@@ -10,7 +10,7 @@ cp composer-phing.lock build/composer.lock
 cp LICENSE build/
 
 cd build
-composer install --no-dev
+composer install --no-dev --prefer-dist
 composer dump-autoload --optimize
 
 find vendor/composer/ -maxdepth 1 -name "*.php"  -exec sed --in-place 's/Composer\\Autoload/PhingComposer\\Autoload/g' '{}' \;
