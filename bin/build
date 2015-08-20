@@ -1,0 +1,20 @@
+#!/bin/sh
+
+set -u
+set -e
+
+mkdir -p build
+
+cp composer-phing.json build/composer.json
+cp composer-phing.lock build/composer.lock
+
+cd build
+composer install --no-dev
+composer dump-autoload --optimize
+
+find vendor/composer/ -maxdepth 1 -name "*.php"  -exec sed --in-place 's/Composer\\Autoload/PhingComposer\\Autoload/g' '{}' \;
+
+# Verify everything works
+echo "Testing Phing..."
+
+vendor/bin/phing -version
