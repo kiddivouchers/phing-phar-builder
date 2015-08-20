@@ -28,9 +28,9 @@ class Compiler
     /**
      * Constructor
      */
-    public function __construct()
+    public function __construct($rootPath)
     {
-        $this->rootPath = dirname(dirname(dirname(__DIR__)));
+        $this->rootPath = $rootPath;
     }
 
     /**

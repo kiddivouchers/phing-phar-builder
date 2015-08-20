@@ -7,6 +7,7 @@ mkdir -p build
 
 cp composer-phing.json build/composer.json
 cp composer-phing.lock build/composer.lock
+cp LICENSE build/
 
 cd build
 composer install --no-dev
@@ -18,3 +19,6 @@ find vendor/composer/ -maxdepth 1 -name "*.php"  -exec sed --in-place 's/Compose
 echo "Testing Phing..."
 
 vendor/bin/phing -version
+../bin/compile
+
+chmod +x phing.phar

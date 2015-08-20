@@ -3,6 +3,8 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$c = new WiderPlan\PhingPharBuilder\Compiler;
+$c = new WiderPlan\PhingPharBuilder\Compiler(
+    isset($arv[1]) ? $argv[1] : getcwd()
+);
 
 $c->compile();
